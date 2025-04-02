@@ -3,28 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Testimonios | Risum</title>
+    <title>Testimonios - Risum Odontología</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body class="bg-gray-50">
-    <!-- Header/Navbar (same as other pages) -->
+    <!-- Header/Navbar -->
     <header class="fixed w-full bg-white shadow-md z-50">
         <div class="container mx-auto px-6 py-3">
             <div class="flex items-center justify-between">
                 <div class="flex items-center">
-                    <img src="logo.png" alt="Risum Logo" class="w-12 h-12">
-                    <img src="logo_name.png" alt="Risum" class="ml-3 h-8">
+                    <img src="logo.png" alt="Risum Logo" class="h-12">
+                    <img src="logo_name.png" alt="Risum" class="h-8 ml-3">
                 </div>
                 
-                <nav class="hidden md:flex items-center space-x-8">
+                <div class="hidden md:flex items-center space-x-8">
                     <a href="index.html" class="nav-link text-gray-700 hover:text-blue-500">Inicio</a>
                     <a href="servicios.html" class="nav-link text-gray-700 hover:text-blue-500">Servicios</a>
                     <a href="nosotros.html" class="nav-link text-gray-700 hover:text-blue-500">Nosotros</a>
-                    <a href="testimonios.html" class="nav-link text-blue-500">Testimonios</a>
+                    <a href="testimonios.html" class="nav-link text-blue-500 font-medium">Testimonios</a>
                     <a href="contacto.html" class="nav-link text-gray-700 hover:text-blue-500">Contacto</a>
-                </nav>
+                </div>
                 
                 <a href="contacto.html" class="hidden md:block bg-blue-500 hover:bg-blue-600 text-white px-6 py-2 rounded-full font-medium transition duration-300">
                     Reservar Cita
@@ -40,7 +40,7 @@
                 <a href="index.html" class="block py-2 text-gray-700 hover:text-blue-500">Inicio</a>
                 <a href="servicios.html" class="block py-2 text-gray-700 hover:text-blue-500">Servicios</a>
                 <a href="nosotros.html" class="block py-2 text-gray-700 hover:text-blue-500">Nosotros</a>
-                <a href="testimonios.html" class="block py-2 text-blue-500">Testimonios</a>
+                <a href="testimonios.html" class="block py-2 text-blue-500 font-medium">Testimonios</a>
                 <a href="contacto.html" class="block py-2 text-gray-700 hover:text-blue-500">Contacto</a>
                 <a href="contacto.html" class="block mt-2 bg-blue-500 text-white px-4 py-2 rounded-full font-medium text-center">
                     Reservar Cita
@@ -49,32 +49,32 @@
         </div>
     </header>
 
-    <!-- Main Content -->
-    <main class="pt-32 pb-20">
-        <!-- Hero Section -->
-        <section class="bg-blue-600 text-white py-20">
-            <div class="container mx-auto px-6 text-center">
-                <h1 class="text-4xl md:text-5xl font-bold mb-6">Lo Que Dicen Nuestros Pacientes</h1>
-                <p class="text-xl max-w-3xl mx-auto">Experiencias reales de personas que confiaron en nuestro cuidado dental.</p>
-            </div>
-        </section>
+    <!-- Testimonials Hero Section -->
+    <section class="hero-gradient pt-32 pb-20 md:pt-40 md:pb-32 text-white">
+        <div class="container mx-auto px-6 text-center">
+            <h1 class="text-4xl md:text-5xl font-bold leading-tight mb-6">Lo que dicen nuestros pacientes</h1>
+            <p class="text-lg md:text-xl mb-8 max-w-2xl mx-auto">Más de 5,000 sonrisas transformadas nos respaldan. Conoce las experiencias de quienes han confiado en nosotros.</p>
+        </div>
+    </section>
 
-        <!-- Testimonials Section -->
-        <section class="container mx-auto px-6 py-16">
-            <div class="text-center mb-12">
-                <h2 class="text-3xl font-bold text-gray-800 mb-4">Testimonios Recientes</h2>
-                <p class="text-lg text-gray-600 max-w-2xl mx-auto">Más de 500 pacientes satisfechos en los últimos 12 meses.</p>
+    <!-- Testimonials Section -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Testimonios Reales</h2>
+                <div class="w-20 h-1 bg-blue-500 mx-auto mb-6"></div>
+                <p class="text-gray-600 max-w-2xl mx-auto">Historias reales de pacientes que han transformado su salud bucal con nosotros.</p>
             </div>
-
-            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
                 <!-- Testimonial 1 -->
-                <div class="bg-white p-8 rounded-xl shadow-md">
+                <div class="testimonial-card bg-gray-50 p-8 rounded-xl shadow-md">
                     <div class="flex items-center mb-6">
-                        <div class="w-16 h-16 rounded-full overflow-hidden bg-gray-200 mr-4">
-                            <img src="https://randomuser.me/api/portraits/women/32.jpg" alt="Cliente" class="w-full h-full object-cover">
-                        </div>
+                        <img src="https://images.unsplash.com/photo-1438761681033-6461ffad8d80?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" 
+                             alt="María González" 
+                             class="w-16 h-16 rounded-full object-cover mr-4">
                         <div>
-                            <h3 class="text-xl font-bold text-gray-800">Ana Rodríguez</h3>
+                            <h3 class="text-lg font-bold text-gray-800">María González</h3>
                             <div class="flex text-yellow-400 mt-1">
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
@@ -84,18 +84,21 @@
                             </div>
                         </div>
                     </div>
-                    <p class="text-gray-600 italic mb-4">"Después de años con miedo al dentista, en Risum me hicieron sentir cómoda desde el primer momento. Mi tratamiento de blanqueamiento fue rápido y sin dolor."</p>
-                    <p class="text-sm text-gray-500">Tratamiento: Blanqueamiento Dental</p>
+                    <p class="text-gray-600 italic mb-4">"Después de años de sentirme insegura por mis dientes, el tratamiento de ortodoncia invisible en Risum cambió mi vida. Ahora sonrío sin miedo y con total confianza."</p>
+                    <div class="flex items-center text-sm text-gray-500">
+                        <i class="fas fa-calendar-alt mr-2"></i>
+                        <span>Tratamiento completado: Enero 2023</span>
+                    </div>
                 </div>
-
+                
                 <!-- Testimonial 2 -->
-                <div class="bg-white p-8 rounded-xl shadow-md">
+                <div class="testimonial-card bg-gray-50 p-8 rounded-xl shadow-md">
                     <div class="flex items-center mb-6">
-                        <div class="w-16 h-16 rounded-full overflow-hidden bg-gray-200 mr-4">
-                            <img src="https://randomuser.me/api/portraits/men/45.jpg" alt="Cliente" class="w-full h-full object-cover">
-                        </div>
+                        <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80" 
+                             alt="Carlos Mendoza" 
+                             class="w-16 h-16 rounded-full object-cover mr-4">
                         <div>
-                            <h3 class="text-xl font-bold text-gray-800">Carlos Méndez</h3>
+                            <h3 class="text-lg font-bold text-gray-800">Carlos Mendoza</h3>
                             <div class="flex text-yellow-400 mt-1">
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
@@ -105,39 +108,45 @@
                             </div>
                         </div>
                     </div>
-                    <p class="text-gray-600 italic mb-4">"Increíble experiencia con mi ortodoncia invisible. El Dr. Gutiérrez es un profesional excepcional. Recomiendo Risum al 100%."</p>
-                    <p class="text-sm text-gray-500">Tratamiento: Ortodoncia Invisible</p>
+                    <p class="text-gray-600 italic mb-4">"El implante dental que me colocaron es perfecto, nadie nota la diferencia con mis dientes naturales. El proceso fue mucho más cómodo de lo que imaginaba."</p>
+                    <div class="flex items-center text-sm text-gray-500">
+                        <i class="fas fa-calendar-alt mr-2"></i>
+                        <span>Tratamiento completado: Agosto 2022</span>
+                    </div>
                 </div>
-
+                
                 <!-- Testimonial 3 -->
-                <div class="bg-white p-8 rounded-xl shadow-md">
+                <div class="testimonial-card bg-gray-50 p-8 rounded-xl shadow-md">
                     <div class="flex items-center mb-6">
-                        <div class="w-16 h-16 rounded-full overflow-hidden bg-gray-200 mr-4">
-                            <img src="https://randomuser.me/api/portraits/women/68.jpg" alt="Cliente" class="w-full h-full object-cover">
-                        </div>
+                        <img src="https://images.unsplash.com/photo-1544005313-94ddf0286df2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=688&q=80" 
+                             alt="Ana Torres" 
+                             class="w-16 h-16 rounded-full object-cover mr-4">
                         <div>
-                            <h3 class="text-xl font-bold text-gray-800">María López</h3>
+                            <h3 class="text-lg font-bold text-gray-800">Ana Torres</h3>
                             <div class="flex text-yellow-400 mt-1">
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
-                                <i class="fas fa-star-half-alt"></i>
+                                <i class="fas fa-star"></i>
                             </div>
                         </div>
                     </div>
-                    <p class="text-gray-600 italic mb-4">"Excelente atención en mi emergencia dental. Me atendieron rápido y resolvieron mi problema con mucha profesionalidad. Volveré para mis controles."</p>
-                    <p class="text-sm text-gray-500">Tratamiento: Urgencia Dental</p>
+                    <p class="text-gray-600 italic mb-4">"Llevé a mi hija de 8 años y quedé impresionada con cómo la trataron. No tuvo miedo en ningún momento y ahora pide volver al dentista. ¡Increíble!"</p>
+                    <div class="flex items-center text-sm text-gray-500">
+                        <i class="fas fa-calendar-alt mr-2"></i>
+                        <span>Tratamiento completado: Marzo 2023</span>
+                    </div>
                 </div>
-
+                
                 <!-- Testimonial 4 -->
-                <div class="bg-white p-8 rounded-xl shadow-md">
+                <div class="testimonial-card bg-gray-50 p-8 rounded-xl shadow-md">
                     <div class="flex items-center mb-6">
-                        <div class="w-16 h-16 rounded-full overflow-hidden bg-gray-200 mr-4">
-                            <img src="https://randomuser.me/api/portraits/men/22.jpg" alt="Cliente" class="w-full h-full object-cover">
-                        </div>
+                        <img src="https://images.unsplash.com/photo-1552058544-f2b08422138a?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=699&q=80" 
+                             alt="Jorge Ramírez" 
+                             class="w-16 h-16 rounded-full object-cover mr-4">
                         <div>
-                            <h3 class="text-xl font-bold text-gray-800">Javier Torres</h3>
+                            <h3 class="text-lg font-bold text-gray-800">Jorge Ramírez</h3>
                             <div class="flex text-yellow-400 mt-1">
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
@@ -147,18 +156,21 @@
                             </div>
                         </div>
                     </div>
-                    <p class="text-gray-600 italic mb-4">"Mi implante dental quedó perfecto. No se nota diferencia con mis dientes naturales. El proceso fue más rápido y menos doloroso de lo que esperaba."</p>
-                    <p class="text-sm text-gray-500">Tratamiento: Implante Dental</p>
+                    <p class="text-gray-600 italic mb-4">"Tenía un dolor insoportable y en Risum me atendieron de emergencia con total profesionalismo. Resolvieron mi problema y me explicaron todo con claridad."</p>
+                    <div class="flex items-center text-sm text-gray-500">
+                        <i class="fas fa-calendar-alt mr-2"></i>
+                        <span>Tratamiento completado: Diciembre 2022</span>
+                    </div>
                 </div>
-
+                
                 <!-- Testimonial 5 -->
-                <div class="bg-white p-8 rounded-xl shadow-md">
+                <div class="testimonial-card bg-gray-50 p-8 rounded-xl shadow-md">
                     <div class="flex items-center mb-6">
-                        <div class="w-16 h-16 rounded-full overflow-hidden bg-gray-200 mr-4">
-                            <img src="https://randomuser.me/api/portraits/women/54.jpg" alt="Cliente" class="w-full h-full object-cover">
-                        </div>
+                        <img src="https://images.unsplash.com/photo-1554151228-14d9def656e4?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=686&q=80" 
+                             alt="Lucía Fernández" 
+                             class="w-16 h-16 rounded-full object-cover mr-4">
                         <div>
-                            <h3 class="text-xl font-bold text-gray-800">Lucía Fernández</h3>
+                            <h3 class="text-lg font-bold text-gray-800">Lucía Fernández</h3>
                             <div class="flex text-yellow-400 mt-1">
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
@@ -168,18 +180,21 @@
                             </div>
                         </div>
                     </div>
-                    <p class="text-gray-600 italic mb-4">"Llevo a mis dos hijos desde pequeños y siempre salen contentos. La Dra. María tiene una paciencia increíble con los niños."</p>
-                    <p class="text-sm text-gray-500">Tratamiento: Odontopediatría</p>
+                    <p class="text-gray-600 italic mb-4">"El diseño de sonrisa que me hicieron superó todas mis expectativas. Por fin tengo la sonrisa con la que siempre soñé. ¡Gracias Risum!"</p>
+                    <div class="flex items-center text-sm text-gray-500">
+                        <i class="fas fa-calendar-alt mr-2"></i>
+                        <span>Tratamiento completado: Septiembre 2022</span>
+                    </div>
                 </div>
-
+                
                 <!-- Testimonial 6 -->
-                <div class="bg-white p-8 rounded-xl shadow-md">
+                <div class="testimonial-card bg-gray-50 p-8 rounded-xl shadow-md">
                     <div class="flex items-center mb-6">
-                        <div class="w-16 h-16 rounded-full overflow-hidden bg-gray-200 mr-4">
-                            <img src="https://randomuser.me/api/portraits/men/76.jpg" alt="Cliente" class="w-full h-full object-cover">
-                        </div>
+                        <img src="https://images.unsplash.com/photo-1566492031773-4f4e44671857?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80" 
+                             alt="Roberto Sánchez" 
+                             class="w-16 h-16 rounded-full object-cover mr-4">
                         <div>
-                            <h3 class="text-xl font-bold text-gray-800">Roberto Sánchez</h3>
+                            <h3 class="text-lg font-bold text-gray-800">Roberto Sánchez</h3>
                             <div class="flex text-yellow-400 mt-1">
                                 <i class="fas fa-star"></i>
                                 <i class="fas fa-star"></i>
@@ -189,32 +204,62 @@
                             </div>
                         </div>
                     </div>
-                    <p class="text-gray-600 italic mb-4">"Excelente clínica. Tecnología de punta y atención personalizada. Resolvieron mi problema de encías que otras clínicas no habían podido diagnosticar correctamente."</p>
-                    <p class="text-sm text-gray-500">Tratamiento: Periodoncia</p>
+                    <p class="text-gray-600 italic mb-4">"Después de años evitando sonreír por vergüenza, el tratamiento de blanqueamiento dental me devolvió la confianza. El equipo de Risum es excepcional."</p>
+                    <div class="flex items-center text-sm text-gray-500">
+                        <i class="fas fa-calendar-alt mr-2"></i>
+                        <span>Tratamiento completado: Mayo 2023</span>
+                    </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- CTA Section -->
-        <section class="bg-blue-600 text-white py-16">
-            <div class="container mx-auto px-6 text-center">
-                <h2 class="text-3xl font-bold mb-6">¿Listo para transformar tu sonrisa?</h2>
-                <p class="text-xl mb-8 max-w-2xl mx-auto">Únete a nuestros pacientes satisfechos y agenda tu primera cita hoy mismo.</p>
-                <a href="contacto.html" class="inline-block bg-white text-blue-600 hover:bg-gray-100 px-8 py-3 rounded-full font-bold text-lg transition duration-300">
-                    Contactar Ahora
-                </a>
+    <!-- Video Testimonials Section -->
+    <section class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Testimonios en Video</h2>
+                <div class="w-20 h-1 bg-blue-500 mx-auto mb-6"></div>
+                <p class="text-gray-600 max-w-2xl mx-auto">Escucha directamente a nuestros pacientes compartir sus experiencias.</p>
             </div>
-        </section>
-    </main>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-8">
+                <div class="bg-black rounded-xl overflow-hidden shadow-xl">
+                    <div class="aspect-w-16 aspect-h-9">
+                        <div class="w-full h-full bg-gray-200 flex items-center justify-center">
+                            <i class="fas fa-play-circle text-6xl text-blue-500"></i>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Historia de María</h3>
+                        <p class="text-gray-600">Ortodoncia invisible</p>
+                    </div>
+                </div>
+                
+                <div class="bg-black rounded-xl overflow-hidden shadow-xl">
+                    <div class="aspect-w-16 aspect-h-9">
+                        <div class="w-full h-full bg-gray-200 flex items-center justify-center">
+                            <i class="fas fa-play-circle text-6xl text-blue-500"></i>
+                        </div>
+                    </div>
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800 mb-2">Historia de Carlos</h3>
+                        <p class="text-gray-600">Implantes dentales</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
 
-    <!-- Footer -->
-    <script src="js/footer.js"></script>
-    
-    <!-- Back to Top Button -->
-    <button id="back-to-top" class="fixed bottom-8 right-8 w-12 h-12 bg-blue-500 text-white rounded-full shadow-lg flex items-center justify-center opacity-0 invisible transition-all duration-300">
-        <i class="fas fa-arrow-up"></i>
-    </button>
+    <!-- CTA Section -->
+    <section class="py-20 bg-blue-500 text-white">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-6">¿Listo para comenzar tu transformación?</h2>
+            <p class="text-xl mb-8 max-w-2xl mx-auto">Agenda una cita de valoración sin costo con uno de nuestros especialistas.</p>
+            <a href="contacto.html" class="inline-block bg-white text-blue-600 hover:bg-gray-100 px-8 py-3 rounded-full font-semibold transition duration-300">
+                Reservar Cita Ahora
+            </a>
+        </div>
+    </section>
 
-    <script src="js/scripts.js"></script>
-</body>
-</html>
+    <script src

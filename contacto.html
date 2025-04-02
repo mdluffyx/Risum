@@ -3,28 +3,28 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Contacto | Risum</title>
+    <title>Contacto - Risum Odontología</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="css/styles.css">
 </head>
 <body class="bg-gray-50">
-    <!-- Header/Navbar (same as other pages) -->
+    <!-- Header/Navbar -->
     <header class="fixed w-full bg-white shadow-md z-50">
         <div class="container mx-auto px-6 py-3">
             <div class="flex items-center justify-between">
                 <div class="flex items-center">
-                    <img src="logo.png" alt="Risum Logo" class="w-12 h-12">
-                    <img src="logo_name.png" alt="Risum" class="ml-3 h-8">
+                    <img src="logo.png" alt="Risum Logo" class="h-12">
+                    <img src="logo_name.png" alt="Risum" class="h-8 ml-3">
                 </div>
                 
-                <nav class="hidden md:flex items-center space-x-8">
+                <div class="hidden md:flex items-center space-x-8">
                     <a href="index.html" class="nav-link text-gray-700 hover:text-blue-500">Inicio</a>
                     <a href="servicios.html" class="nav-link text-gray-700 hover:text-blue-500">Servicios</a>
                     <a href="nosotros.html" class="nav-link text-gray-700 hover:text-blue-500">Nosotros</a>
                     <a href="testimonios.html" class="nav-link text-gray-700 hover:text-blue-500">Testimonios</a>
-                    <a href="contacto.html" class="nav-link text-blue-500">Contacto</a>
-                </nav>
+                    <a href="contacto.html" class="nav-link text-blue-500 font-medium">Contacto</a>
+                </div>
                 
                 <a href="contacto.html" class="hidden md:block bg-blue-500 hover:bg-blue-600 text-white px-6 py-2 rounded-full font-medium transition duration-300">
                     Reservar Cita
@@ -41,7 +41,7 @@
                 <a href="servicios.html" class="block py-2 text-gray-700 hover:text-blue-500">Servicios</a>
                 <a href="nosotros.html" class="block py-2 text-gray-700 hover:text-blue-500">Nosotros</a>
                 <a href="testimonios.html" class="block py-2 text-gray-700 hover:text-blue-500">Testimonios</a>
-                <a href="contacto.html" class="block py-2 text-blue-500">Contacto</a>
+                <a href="contacto.html" class="block py-2 text-blue-500 font-medium">Contacto</a>
                 <a href="contacto.html" class="block mt-2 bg-blue-500 text-white px-4 py-2 rounded-full font-medium text-center">
                     Reservar Cita
                 </a>
@@ -49,162 +49,157 @@
         </div>
     </header>
 
-    <!-- Main Content -->
-    <main class="pt-32 pb-20">
-        <!-- Hero Section -->
-        <section class="bg-blue-600 text-white py-20">
-            <div class="container mx-auto px-6 text-center">
-                <h1 class="text-4xl md:text-5xl font-bold mb-6">Contáctanos</h1>
-                <p class="text-xl max-w-3xl mx-auto">Estamos aquí para responder todas tus preguntas y ayudarte con tu salud dental.</p>
+    <!-- Contact Hero Section -->
+    <section class="hero-gradient pt-32 pb-20 md:pt-40 md:pb-32 text-white">
+        <div class="container mx-auto px-6">
+            <div class="max-w-3xl">
+                <h1 class="text-4xl md:text-5xl font-bold leading-tight mb-6">Estamos aquí para ayudarte</h1>
+                <p class="text-lg md:text-xl mb-8">Contáctanos para resolver tus dudas o agendar una cita. Nuestro equipo estará encantado de atenderte.</p>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- Contact Form and Info Section -->
-        <section class="container mx-auto px-6 py-16">
-            <div class="grid md:grid-cols-2 gap-12">
-                <!-- Contact Form -->
-                <div class="bg-white p-8 rounded-xl shadow-md">
-                    <h2 class="text-2xl font-bold text-gray-800 mb-6">Envíanos un Mensaje</h2>
-                    <form id="contact-form" class="space-y-6">
+    <!-- Contact Form Section -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row">
+                <div class="md:w-1/2 mb-12 md:mb-0 md:pr-12">
+                    <h2 class="text-3xl font-bold text-gray-800 mb-6">Envíanos un mensaje</h2>
+                    <form id="contactForm" class="space-y-6">
                         <div>
-                            <label for="name" class="block text-gray-700 mb-2">Nombre Completo</label>
+                            <label for="name" class="block text-gray-700 font-medium mb-2">Nombre completo</label>
                             <input type="text" id="name" name="name" required 
-                                   class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
+                                   class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
                         </div>
-                        
                         <div>
-                            <label for="email" class="block text-gray-700 mb-2">Correo Electrónico</label>
+                            <label for="email" class="block text-gray-700 font-medium mb-2">Correo electrónico</label>
                             <input type="email" id="email" name="email" required 
-                                   class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
+                                   class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
                         </div>
-                        
                         <div>
-                            <label for="phone" class="block text-gray-700 mb-2">Teléfono</label>
+                            <label for="phone" class="block text-gray-700 font-medium mb-2">Teléfono (opcional)</label>
                             <input type="tel" id="phone" name="phone" 
-                                   class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
+                                   class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
                         </div>
-                        
                         <div>
-                            <label for="service" class="block text-gray-700 mb-2">Servicio de Interés</label>
+                            <label for="service" class="block text-gray-700 font-medium mb-2">Servicio de interés</label>
                             <select id="service" name="service" 
-                                    class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
-                                <option value="">Seleccione un servicio</option>
-                                <option value="limpieza">Limpieza Dental</option>
-                                <option value="blanqueamiento">Blanqueamiento</option>
+                                    class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500">
+                                <option value="">Selecciona un servicio</option>
+                                <option value="limpieza">Limpieza dental</option>
                                 <option value="ortodoncia">Ortodoncia</option>
-                                <option value="implantes">Implantes Dentales</option>
-                                <option value="emergencia">Emergencia Dental</option>
+                                <option value="blanqueamiento">Blanqueamiento dental</option>
+                                <option value="implantes">Implantes dentales</option>
                                 <option value="otros">Otros</option>
                             </select>
                         </div>
-                        
                         <div>
-                            <label for="message" class="block text-gray-700 mb-2">Mensaje</label>
+                            <label for="message" class="block text-gray-700 font-medium mb-2">Mensaje</label>
                             <textarea id="message" name="message" rows="4" required 
-                                      class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500"></textarea>
+                                      class="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500"></textarea>
                         </div>
-                        
                         <button type="submit" 
-                                class="w-full bg-blue-500 hover:bg-blue-600 text-white py-3 px-6 rounded-lg font-medium transition duration-300">
+                                class="w-full bg-blue-500 hover:bg-blue-600 text-white font-medium py-3 px-6 rounded-lg transition duration-300">
                             Enviar Mensaje
                         </button>
                     </form>
                 </div>
-
-                <!-- Contact Info -->
-                <div class="space-y-8">
-                    <div class="bg-white p-8 rounded-xl shadow-md">
-                        <h2 class="text-2xl font-bold text-gray-800 mb-6">Información de Contacto</h2>
+                
+                <div class="md:w-1/2">
+                    <h2 class="text-3xl font-bold text-gray-800 mb-6">Información de contacto</h2>
+                    
+                    <div class="space-y-6 mb-8">
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0 mt-1">
+                                <i class="fas fa-map-marker-alt text-blue-500 text-xl"></i>
+                            </div>
+                            <div class="ml-4">
+                                <h3 class="text-lg font-semibold text-gray-800">Dirección</h3>
+                                <p class="text-gray-600">Av. Principal 1234, Col. Centro<br>Ciudad de México, CDMX 06000</p>
+                            </div>
+                        </div>
                         
-                        <div class="space-y-6">
-                            <div class="flex items-start">
-                                <div class="bg-blue-100 p-3 rounded-full mr-4">
-                                    <i class="fas fa-map-marker-alt text-blue-500 text-xl"></i>
-                                </div>
-                                <div>
-                                    <h3 class="text-lg font-semibold text-gray-800">Dirección</h3>
-                                    <p class="text-gray-600">Av. Principal 1234, Local 5<br>Ciudad, País</p>
-                                </div>
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0 mt-1">
+                                <i class="fas fa-phone-alt text-blue-500 text-xl"></i>
                             </div>
-                            
-                            <div class="flex items-start">
-                                <div class="bg-blue-100 p-3 rounded-full mr-4">
-                                    <i class="fas fa-phone-alt text-blue-500 text-xl"></i>
-                                </div>
-                                <div>
-                                    <h3 class="text-lg font-semibold text-gray-800">Teléfonos</h3>
-                                    <p class="text-gray-600">+1 234 567 8900<br>+1 234 567 8901 (Emergencias)</p>
-                                </div>
+                            <div class="ml-4">
+                                <h3 class="text-lg font-semibold text-gray-800">Teléfonos</h3>
+                                <p class="text-gray-600">55 1234 5678<br>55 8765 4321</p>
                             </div>
-                            
-                            <div class="flex items-start">
-                                <div class="bg-blue-100 p-3 rounded-full mr-4">
-                                    <i class="fas fa-envelope text-blue-500 text-xl"></i>
-                                </div>
-                                <div>
-                                    <h3 class="text-lg font-semibold text-gray-800">Correo Electrónico</h3>
-                                    <p class="text-gray-600">info@risum.com<br>citas@risum.com</p>
-                                </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0 mt-1">
+                                <i class="fas fa-envelope text-blue-500 text-xl"></i>
                             </div>
-                            
-                            <div class="flex items-start">
-                                <div class="bg-blue-100 p-3 rounded-full mr-4">
-                                    <i class="fas fa-clock text-blue-500 text-xl"></i>
-                                </div>
-                                <div>
-                                    <h3 class="text-lg font-semibold text-gray-800">Horario de Atención</h3>
-                                    <p class="text-gray-600">
-                                        Lunes a Viernes: 8:00 AM - 7:00 PM<br>
-                                        Sábados: 9:00 AM - 2:00 PM<br>
-                                        Domingos: Cerrado
-                                    </p>
-                                </div>
+                            <div class="ml-4">
+                                <h3 class="text-lg font-semibold text-gray-800">Correo electrónico</h3>
+                                <p class="text-gray-600">contacto@risum.com.mx</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0 mt-1">
+                                <i class="fas fa-clock text-blue-500 text-xl"></i>
+                            </div>
+                            <div class="ml-4">
+                                <h3 class="text-lg font-semibold text-gray-800">Horario</h3>
+                                <p class="text-gray-600">Lunes a Viernes: 9:00 - 19:00 hrs<br>Sábados: 9:00 - 14:00 hrs</p>
                             </div>
                         </div>
                     </div>
-
+                    
                     <!-- Social Media -->
-                    <div class="bg-white p-8 rounded-xl shadow-md">
-                        <h2 class="text-2xl font-bold text-gray-800 mb-6">Síguenos</h2>
+                    <div class="mb-8">
+                        <h3 class="text-lg font-semibold text-gray-800 mb-4">Síguenos en redes sociales</h3>
                         <div class="flex space-x-4">
-                            <a href="#" class="bg-blue-500 hover:bg-blue-600 text-white w-12 h-12 rounded-full flex items-center justify-center transition duration-300">
-                                <i class="fab fa-facebook-f text-xl"></i>
+                            <a href="#" class="social-icon bg-blue-500 hover:bg-blue-600 text-white w-10 h-10 rounded-full flex items-center justify-center transition duration-300">
+                                <i class="fab fa-facebook-f"></i>
                             </a>
-                            <a href="#" class="bg-pink-500 hover:bg-pink-600 text-white w-12 h-12 rounded-full flex items-center justify-center transition duration-300">
-                                <i class="fab fa-instagram text-xl"></i>
+                            <a href="#" class="social-icon bg-pink-500 hover:bg-pink-600 text-white w-10 h-10 rounded-full flex items-center justify-center transition duration-300">
+                                <i class="fab fa-instagram"></i>
                             </a>
-                            <a href="#" class="bg-blue-400 hover:bg-blue-500 text-white w-12 h-12 rounded-full flex items-center justify-center transition duration-300">
-                                <i class="fab fa-twitter text-xl"></i>
+                            <a href="#" class="social-icon bg-blue-400 hover:bg-blue-500 text-white w-10 h-10 rounded-full flex items-center justify-center transition duration-300">
+                                <i class="fab fa-twitter"></i>
                             </a>
-                            <a href="#" class="bg-red-500 hover:bg-red-600 text-white w-12 h-12 rounded-full flex items-center justify-center transition duration-300">
-                                <i class="fab fa-youtube text-xl"></i>
+                            <a href="#" class="social-icon bg-red-500 hover:bg-red-600 text-white w-10 h-10 rounded-full flex items-center justify-center transition duration-300">
+                                <i class="fab fa-youtube"></i>
+                            </a>
+                            <a href="#" class="social-icon bg-green-500 hover:bg-green-600 text-white w-10 h-10 rounded-full flex items-center justify-center transition duration-300">
+                                <i class="fab fa-whatsapp"></i>
                             </a>
                         </div>
                     </div>
+                    
+                    <!-- Map -->
+                    <div class="rounded-xl overflow-hidden shadow-lg">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3762.888317414803!2d-99.1694849241646!3d19.4270207408761!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d1ff35f5bd1563%3A0x6c366f0e2de02ff7!2sEl%20%C3%81ngel%20de%20la%20Independencia!5e0!3m2!1ses!2smx!4v1689876543210!5m2!1ses!2smx" 
+                                width="100%" height="300" style="border:0;" allowfullscreen="" loading="lazy" 
+                                referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
                 </div>
             </div>
-        </section>
+        </div>
+    </section>
 
-        <!-- Map Section -->
-        <section class="container mx-auto px-6 pb-16">
-            <div class="bg-white p-8 rounded-xl shadow-md">
-                <h2 class="text-2xl font-bold text-gray-800 mb-6">Nuestra Ubicación</h2>
-                <div class="aspect-w-16 aspect-h-9 rounded-lg overflow-hidden">
-                    <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3966.521260322283!2d-75.56190558473444!3d6.201662295501325!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8e44282d8786e3a5%3A0x3b8d5a1a1a1a1a1a!2sAv.%20Principal%201234%2C%20Local%205%2C%20Ciudad%2C%20Pa%C3%ADs!5e0!3m2!1ses!2sco!4v1620000000000!5m2!1ses!2sco" 
-                            width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
-                </div>
+    <!-- Appointment CTA Section -->
+    <section class="py-20 bg-blue-500 text-white">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-6">¿Listo para tu próxima cita?</h2>
+            <p class="text-xl mb-8 max-w-2xl mx-auto">Agenda una consulta con nuestros especialistas y comienza tu camino hacia una sonrisa saludable.</p>
+            <div class="flex flex-col sm:flex-row justify-center space-y-4 sm:space-y-0 sm:space-x-4">
+                <a href="tel:+525512345678" class="inline-block bg-white text-blue-600 hover:bg-gray-100 px-8 py-3 rounded-full font-semibold transition duration-300">
+                    <i class="fas fa-phone-alt mr-2"></i> Llamar Ahora
+                </a>
+                <a href="#" class="inline-block bg-transparent border-2 border-white text-white hover:bg-white hover:text-blue-500 px-8 py-3 rounded-full font-semibold transition duration-300">
+                    <i class="fas fa-calendar-alt mr-2"></i> Agendar en Línea
+                </a>
             </div>
-        </section>
-    </main>
+        </div>
+    </section>
 
-    <!-- Footer -->
-    <script src="js/footer.js"></script>
-    
-    <!-- Back to Top Button -->
-    <button id="back-to-top" class="fixed bottom-8 right-8 w-12 h-12 bg-blue-500 text-white rounded-full shadow-lg flex items-center justify-center opacity-0 invisible transition-all duration-300">
-        <i class="fas fa-arrow-up"></i>
-    </button>
-
+    <script src="js/contact.js"></script>
     <script src="js/scripts.js"></script>
 </body>
 </html>

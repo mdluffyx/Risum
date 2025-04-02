@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Servicios - Risum Odontología</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="bg-gray-50">
+    <!-- Header/Navbar -->
+    <header class="fixed w-full bg-white shadow-md z-50">
+        <div class="container mx-auto px-6 py-3">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center">
+                    <img src="logo.png" alt="Risum Logo" class="h-12">
+                    <img src="logo_name.png" alt="Risum" class="h-8 ml-3">
+                </div>
+                
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="nav-link text-gray-700 hover:text-blue-500">Inicio</a>
+                    <a href="servicios.html" class="nav-link text-blue-500 font-medium">Servicios</a>
+                    <a href="nosotros.html" class="nav-link text-gray-700 hover:text-blue-500">Nosotros</a>
+                    <a href="testimonios.html" class="nav-link text-gray-700 hover:text-blue-500">Testimonios</a>
+                    <a href="contacto.html" class="nav-link text-gray-700 hover:text-blue-500">Contacto</a>
+                </div>
+                
+                <a href="contacto.html" class="hidden md:block bg-blue-500 hover:bg-blue-600 text-white px-6 py-2 rounded-full font-medium transition duration-300">
+                    Reservar Cita
+                </a>
+                
+                <button id="mobile-menu-button" class="md:hidden text-gray-700 focus:outline-none">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+            
+            <!-- Mobile menu -->
+            <div id="mobile-menu" class="hidden md:hidden mt-4 pb-4">
+                <a href="index.html" class="block py-2 text-gray-700 hover:text-blue-500">Inicio</a>
+                <a href="servicios.html" class="block py-2 text-blue-500 font-medium">Servicios</a>
+                <a href="nosotros.html" class="block py-2 text-gray-700 hover:text-blue-500">Nosotros</a>
+                <a href="testimonios.html" class="block py-2 text-gray-700 hover:text-blue-500">Testimonios</a>
+                <a href="contacto.html" class="block py-2 text-gray-700 hover:text-blue-500">Contacto</a>
+                <a href="contacto.html" class="block mt-2 bg-blue-500 text-white px-4 py-2 rounded-full font-medium text-center">
+                    Reservar Cita
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Services Section -->
+    <section class="py-20 bg-gray-50 pt-32">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Nuestros Servicios</h2>
+                <div class="w-20 h-1 bg-blue-500 mx-auto mb-6"></div>
+                <p class="text-gray-600 max-w-2xl mx-auto">Ofrecemos una amplia gama de servicios odontológicos con los más altos estándares de calidad y tecnología de punta.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Service 1 -->
+                <div class="service-card bg-white p-8 rounded-xl shadow-md transition duration-300">
+                    <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-tooth text-blue-500 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">Blanqueamiento Dental</h3>
+                    <p class="text-gray-600 mb-4">Recupera el brillo natural de tus dientes con nuestro tratamiento de blanqueamiento seguro y efectivo.</p>
+                    <a href="contacto.html" class="text-blue-500 font-medium flex items-center">
+                        Saber más <i class="fas fa-arrow-right ml-2"></i>
+                    </a>
+                </div>
+                
+                <!-- Service 2 -->
+                <div class="service-card bg-white p-8 rounded-xl shadow-md transition duration-300">
+                    <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-teeth-open text-blue-500 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">Ortodoncia</h3>
+                    <p class="text-gray-600 mb-4">Corrige la posición de tus dientes con nuestros tratamientos de ortodoncia tradicional e invisible.</p>
+                    <a href="contacto.html" class="text-blue-500 font-medium flex items-center">
+                        Saber más <i class="fas fa-arrow-right ml-2"></i>
+                    </a>
+                </div>
+                
+                <!-- Service 3 -->
+                <div class="service-card bg-white p-8 rounded-xl shadow-md transition duration-300">
+                    <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-teeth text-blue-500 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">Implantes Dentales</h3>
+                    <p class="text-gray-600 mb-4">Soluciones permanentes para reemplazar dientes perdidos con la última tecnología en implantes.</p>
+                    <a href="contacto.html" class="text-blue-500 font-medium flex items-center">
+                        Saber más <i class="fas fa-arrow-right ml-2"></i>
+                    </a>
+                </div>
+                
+                <!-- Service 4 -->
+                <div class="service-card bg-white p-8 rounded-xl shadow-md transition duration-300">
+                    <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-tooth text-blue-500 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">Odontopediatría</h3>
+                    <p class="text-gray-600 mb-4">Cuidado dental especializado para los más pequeños en un ambiente amigable y sin estrés.</p>
+                    <a href="contacto.html" class="text-blue-500 font-medium flex items-center">
+                        Saber más <i class="fas fa-arrow-right ml-2"></i>
+                    </a>
+                </div>
+                
+                <!-- Service 5 -->
+                <div class="service-card bg-white p-8 rounded-xl shadow-md transition duration-300">
+                    <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-teeth-open text-blue-500 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">Endodoncia</h3>
+                    <p class="text-gray-600 mb-4">Tratamiento de conducto indoloro para salvar tus dientes y eliminar el dolor de raíz.</p>
+                    <a href="contacto.html" class="text-blue-500 font-medium flex items-center">
+                        Saber más <i class="fas fa-arrow-right ml-2"></i>
+                    </a>
+                </div>
+                
+                <!-- Service 6 -->
+                <div class="service-card bg-white p-8 rounded-xl shadow-md transition duration-300">
+                    <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-teeth text-blue-500 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">Estética Dental</h3>
+                    <p class="text-gray-600 mb-4">Diseño de sonrisa personalizado con carillas, coronas y tratamientos estéticos avanzados.</p>
+                    <a href="contacto.html" class="text-blue-500 font-medium flex items-center">
+                        Saber más <i class="fas fa-arrow-right ml-2"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Appointment Section -->
+    <section class="py-20 bg-blue-500 text-white">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-6">¿Listo para transformar tu sonrisa?</h2>
+            <p class="text-xl mb-8 max-w-2xl mx-auto">Agenda una cita de valoración sin costo con uno de nuestros especialistas.</p>
+            <a href="contacto.html" class="inline-block bg-white text-blue-600 hover:bg-gray-100 px-8 py-3 rounded-full font-semibold transition duration-300">
+                Reservar Cita Ahora
+            </a>
+        </div>
+    </section>
+
+    <script src="js/scripts.js"></script>
+</body>
+</html>

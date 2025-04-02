@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nosotros - Risum Odontología</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body class="bg-gray-50">
+    <!-- Header/Navbar -->
+    <header class="fixed w-full bg-white shadow-md z-50">
+        <div class="container mx-auto px-6 py-3">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center">
+                    <img src="logo.png" alt="Risum Logo" class="h-12">
+                    <img src="logo_name.png" alt="Risum" class="h-8 ml-3">
+                </div>
+                
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="index.html" class="nav-link text-gray-700 hover:text-blue-500">Inicio</a>
+                    <a href="servicios.html" class="nav-link text-gray-700 hover:text-blue-500">Servicios</a>
+                    <a href="nosotros.html" class="nav-link text-blue-500 font-medium">Nosotros</a>
+                    <a href="testimonios.html" class="nav-link text-gray-700 hover:text-blue-500">Testimonios</a>
+                    <a href="contacto.html" class="nav-link text-gray-700 hover:text-blue-500">Contacto</a>
+                </div>
+                
+                <a href="contacto.html" class="hidden md:block bg-blue-500 hover:bg-blue-600 text-white px-6 py-2 rounded-full font-medium transition duration-300">
+                    Reservar Cita
+                </a>
+                
+                <button id="mobile-menu-button" class="md:hidden text-gray-700 focus:outline-none">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+            
+            <!-- Mobile menu -->
+            <div id="mobile-menu" class="hidden md:hidden mt-4 pb-4">
+                <a href="index.html" class="block py-2 text-gray-700 hover:text-blue-500">Inicio</a>
+                <a href="servicios.html" class="block py-2 text-gray-700 hover:text-blue-500">Servicios</a>
+                <a href="nosotros.html" class="block py-2 text-blue-500 font-medium">Nosotros</a>
+                <a href="testimonios.html" class="block py-2 text-gray-700 hover:text-blue-500">Testimonios</a>
+                <a href="contacto.html" class="block py-2 text-gray-700 hover:text-blue-500">Contacto</a>
+                <a href="contacto.html" class="block mt-2 bg-blue-500 text-white px-4 py-2 rounded-full font-medium text-center">
+                    Reservar Cita
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- About Hero Section -->
+    <section class="hero-gradient pt-32 pb-20 md:pt-40 md:pb-32 text-white">
+        <div class="container mx-auto px-6">
+            <div class="max-w-3xl">
+                <h1 class="text-4xl md:text-5xl font-bold leading-tight mb-6">Más que una clínica dental, somos tu aliado en salud bucal</h1>
+                <p class="text-lg md:text-xl mb-8">En Risum nos apasiona crear sonrisas saludables y hermosas que perduren toda la vida.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Content Section -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-12 md:mb-0 md:pr-12">
+                    <h2 class="text-3xl font-bold text-gray-800 mb-6">Nuestra Historia</h2>
+                    <p class="text-gray-600 mb-6">Fundada en 2010 por el Dr. Alejandro Martínez, Risum nació con la visión de revolucionar la odontología en nuestra comunidad, combinando excelencia clínica con un trato humano excepcional.</p>
+                    <p class="text-gray-600 mb-6">Lo que comenzó como una pequeña clínica con dos consultorios hoy es un centro odontológico integral con 10 especialistas y tecnología de punta, pero sin perder nunca nuestro enfoque personalizado.</p>
+                    <p class="text-gray-600">Cada año atendemos a más de 5,000 pacientes que confían en nosotros para cuidar lo más valioso: su salud bucal y su sonrisa.</p>
+                </div>
+                <div class="md:w-1/2">
+                    <img src="https://images.unsplash.com/photo-1579684385127-1ef15d508118?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" 
+                         alt="Equipo Risum" 
+                         class="rounded-2xl shadow-xl w-full">
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Mission/Vision Section -->
+    <section class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-2 gap-12">
+                <div class="bg-white p-8 rounded-xl shadow-md">
+                    <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-bullseye text-blue-500 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-4">Nuestra Misión</h3>
+                    <p class="text-gray-600">Proporcionar atención odontológica integral de la más alta calidad, utilizando tecnología avanzada y enfoques personalizados, para mejorar la salud bucal y la calidad de vida de nuestros pacientes.</p>
+                </div>
+                <div class="bg-white p-8 rounded-xl shadow-md">
+                    <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-eye text-blue-500 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-4">Nuestra Visión</h3>
+                    <p class="text-gray-600">Ser reconocidos como el referente en odontología de excelencia en nuestra región, destacando por nuestra innovación, ética profesional y compromiso con la satisfacción total del paciente.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Team Section -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Conoce a Nuestro Equipo</h2>
+                <div class="w-20 h-1 bg-blue-500 mx-auto mb-6"></div>
+                <p class="text-gray-600 max-w-2xl mx-auto">Profesionales altamente calificados y comprometidos con tu salud bucal.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Team Member 1 -->
+                <div class="team-card bg-gray-50 rounded-xl overflow-hidden shadow-md transition duration-300">
+                    <img src="https://images.unsplash.com/photo-1559839734-2b71ea197ec2?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" 
+                         alt="Dr. Alejandro Martínez" 
+                         class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800 mb-1">Dr. Alejandro Martínez</h3>
+                        <p class="text-blue-500 font-medium mb-4">Fundador y Odontólogo General</p>
+                        <p class="text-gray-600 mb-4">Especializado en rehabilitación oral y estética dental con más de 20 años de experiencia.</p>
+                        <div class="flex space-x-4">
+                            <a href="#" class="text-blue-500 hover:text-blue-600"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#" class="text-blue-500 hover:text-blue-600"><i class="fab fa-twitter"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Team Member 2 -->
+                <div class="team-card bg-gray-50 rounded-xl overflow-hidden shadow-md transition duration-300">
+                    <img src="https://images.unsplash.com/photo-1594824476967-48c8b964273f?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=687&q=80" 
+                         alt="Dra. Laura Sánchez" 
+                         class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800 mb-1">Dra. Laura Sánchez</h3>
+                        <p class="text-blue-500 font-medium mb-4">Ortodoncista</p>
+                        <p class="text-gray-600 mb-4">Especialista en ortodoncia invisible y tratamientos para niños y adolescentes.</p>
+                        <div class="flex space-x-4">
+                            <a href="#" class="text-blue-500 hover:text-blue-600"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#" class="text-blue-500 hover:text-blue-600"><i class="fab fa-twitter"></i></a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Team Member 3 -->
+                <div class="team-card bg-gray-50 rounded-xl overflow-hidden shadow-md transition duration-300">
+                    <img src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1528&q=80" 
+                         alt="Dr. Carlos Rodríguez" 
+                         class="w-full h-64 object-cover">
+                    <div class="p-6">
+                        <h3 class="text-xl font-bold text-gray-800 mb-1">Dr. Carlos Rodríguez</h3>
+                        <p class="text-blue-500 font-medium mb-4">Cirujano Maxilofacial</p>
+                        <p class="text-gray-600 mb-4">Experto en implantes dentales y cirugías complejas con tecnología 3D.</p>
+                        <div class="flex space-x-4">
+                            <a href="#" class="text-blue-500 hover:text-blue-600"><i class="fab fa-linkedin-in"></i></a>
+                            <a href="#" class="text-blue-500 hover:text-blue-600"><i class="fab fa-twitter"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Values Section -->
+    <section class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Nuestros Valores</h2>
+                <div class="w-20 h-1 bg-blue-500 mx-auto mb-6"></div>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-xl shadow-md text-center">
+                    <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-heart text-blue-500 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">Empatía</h3>
+                    <p class="text-gray-600">Nos ponemos en el lugar de nuestros pacientes para ofrecer una experiencia libre de estrés y ansiedad.</p>
+                </div>
+                
+                <div class="bg-white p-8 rounded-xl shadow-md text-center">
+                    <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-award text-blue-500 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">Excelencia</h3>
+                    <p class="text-gray-600">Buscamos la perfección en cada tratamiento mediante educación continua y los más altos estándares.</p>
+                </div>
+                
+                <div class="bg-white p-8 rounded-xl shadow-md text-center">
+                    <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mx-auto mb-6">
+                        <i class="fas fa-hand-holding-heart text-blue-500 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">Integridad</h3>
+                    <p class="text-gray-600">Siempre honestos y transparentes en nuestros diagnósticos, tratamientos y honorarios.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <script src="js/scripts.js"></script>
+</body>
+</html>

@@ -1,0 +1,681 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Risum - Odontología de Excelencia</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+        
+        body {
+            font-family: 'Poppins', sans-serif;
+            scroll-behavior: smooth;
+        }
+        
+        .hero-gradient {
+            background: linear-gradient(135deg, rgba(52, 144, 220, 0.9) 0%, rgba(74, 222, 222, 0.9) 100%);
+        }
+        
+        .service-card:hover {
+            transform: translateY(-10px);
+            box-shadow: 0 20px 25px -5px rgba(0, 0, 0, 0.1), 0 10px 10px -5px rgba(0, 0, 0, 0.04);
+        }
+        
+        .testimonial-card {
+            transition: all 0.3s ease;
+        }
+        
+        .testimonial-card:hover {
+            transform: scale(1.05);
+        }
+        
+        .floating {
+            animation: floating 3s ease-in-out infinite;
+        }
+        
+        @keyframes floating {
+            0% { transform: translateY(0px); }
+            50% { transform: translateY(-15px); }
+            100% { transform: translateY(0px); }
+        }
+        
+        .nav-link {
+            position: relative;
+        }
+        
+        .nav-link:after {
+            content: '';
+            position: absolute;
+            width: 0;
+            height: 2px;
+            bottom: 0;
+            left: 0;
+            background-color: #3b82f6;
+            transition: width 0.3s ease;
+        }
+        
+        .nav-link:hover:after {
+            width: 100%;
+        }
+    </style>
+</head>
+<body class="bg-gray-50">
+    <!-- Header/Navbar -->
+    <header class="fixed w-full bg-white shadow-md z-50">
+        <div class="container mx-auto px-6 py-3">
+            <div class="flex items-center justify-between">
+                <div class="flex items-center">
+                    <div class="w-12 h-12 bg-blue-500 rounded-full flex items-center justify-center text-white font-bold text-xl">R</div>
+                    <a href="#" class="ml-3 text-2xl font-bold text-gray-800">Risum</a>
+                </div>
+                
+                <div class="hidden md:flex items-center space-x-8">
+                    <a href="#inicio" class="nav-link text-gray-700 hover:text-blue-500">Inicio</a>
+                    <a href="#servicios" class="nav-link text-gray-700 hover:text-blue-500">Servicios</a>
+                    <a href="#nosotros" class="nav-link text-gray-700 hover:text-blue-500">Nosotros</a>
+                    <a href="#testimonios" class="nav-link text-gray-700 hover:text-blue-500">Testimonios</a>
+                    <a href="#contacto" class="nav-link text-gray-700 hover:text-blue-500">Contacto</a>
+                </div>
+                
+                <a href="#contacto" class="hidden md:block bg-blue-500 hover:bg-blue-600 text-white px-6 py-2 rounded-full font-medium transition duration-300">
+                    Reservar Cita
+                </a>
+                
+                <button id="mobile-menu-button" class="md:hidden text-gray-700 focus:outline-none">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+            
+            <!-- Mobile menu -->
+            <div id="mobile-menu" class="hidden md:hidden mt-4 pb-4">
+                <a href="#inicio" class="block py-2 text-gray-700 hover:text-blue-500">Inicio</a>
+                <a href="#servicios" class="block py-2 text-gray-700 hover:text-blue-500">Servicios</a>
+                <a href="#nosotros" class="block py-2 text-gray-700 hover:text-blue-500">Nosotros</a>
+                <a href="#testimonios" class="block py-2 text-gray-700 hover:text-blue-500">Testimonios</a>
+                <a href="#contacto" class="block py-2 text-gray-700 hover:text-blue-500">Contacto</a>
+                <a href="#contacto" class="block mt-2 bg-blue-500 text-white px-4 py-2 rounded-full font-medium text-center">
+                    Reservar Cita
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="hero-gradient pt-32 pb-20 md:pt-40 md:pb-32 text-white">
+        <div class="container mx-auto px-6 flex flex-col md:flex-row items-center">
+            <div class="md:w-1/2 mb-12 md:mb-0">
+                <h1 class="text-4xl md:text-5xl font-bold leading-tight mb-6">Tu sonrisa perfecta comienza aquí</h1>
+                <p class="text-lg md:text-xl mb-8">En Risum combinamos tecnología de vanguardia con un equipo humano excepcional para ofrecerte la mejor experiencia odontológica.</p>
+                <div class="flex flex-col sm:flex-row space-y-4 sm:space-y-0 sm:space-x-4">
+                    <a href="#contacto" class="bg-white text-blue-600 hover:bg-gray-100 px-8 py-3 rounded-full font-semibold text-center transition duration-300">
+                        Reservar Cita
+                    </a>
+                    <a href="#servicios" class="border-2 border-white hover:bg-white hover:text-blue-600 px-8 py-3 rounded-full font-semibold text-center transition duration-300">
+                        Nuestros Servicios
+                    </a>
+                </div>
+            </div>
+            <div class="md:w-1/2 flex justify-center">
+                <img src="https://images.unsplash.com/photo-1588776814546-1ffcf47267a5?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1470&q=80" 
+                     alt="Dentista atendiendo a paciente" 
+                     class="rounded-2xl shadow-2xl w-full max-w-md floating">
+            </div>
+        </div>
+    </section>
+
+    <!-- Stats Section -->
+    <section class="bg-white py-12 shadow-sm">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
+                <div class="p-4">
+                    <div class="text-4xl font-bold text-blue-500 mb-2">5,000+</div>
+                    <div class="text-gray-600">Pacientes atendidos</div>
+                </div>
+                <div class="p-4">
+                    <div class="text-4xl font-bold text-blue-500 mb-2">15+</div>
+                    <div class="text-gray-600">Años de experiencia</div>
+                </div>
+                <div class="p-4">
+                    <div class="text-4xl font-bold text-blue-500 mb-2">98%</div>
+                    <div class="text-gray-600">Satisfacción del paciente</div>
+                </div>
+                <div class="p-4">
+                    <div class="text-4xl font-bold text-blue-500 mb-2">10</div>
+                    <div class="text-gray-600">Especialidades odontológicas</div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Services Section -->
+    <section id="servicios" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Nuestros Servicios</h2>
+                <div class="w-20 h-1 bg-blue-500 mx-auto mb-6"></div>
+                <p class="text-gray-600 max-w-2xl mx-auto">Ofrecemos una amplia gama de servicios odontológicos con los más altos estándares de calidad y tecnología de punta.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Service 1 -->
+                <div class="service-card bg-white p-8 rounded-xl shadow-md transition duration-300">
+                    <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-tooth text-blue-500 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">Blanqueamiento Dental</h3>
+                    <p class="text-gray-600 mb-4">Recupera el brillo natural de tus dientes con nuestro tratamiento de blanqueamiento seguro y efectivo.</p>
+                    <a href="#" class="text-blue-500 font-medium flex items-center">
+                        Saber más <i class="fas fa-arrow-right ml-2"></i>
+                    </a>
+                </div>
+                
+                <!-- Service 2 -->
+                <div class="service-card bg-white p-8 rounded-xl shadow-md transition duration-300">
+                    <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-teeth-open text-blue-500 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">Ortodoncia</h3>
+                    <p class="text-gray-600 mb-4">Corrige la posición de tus dientes con nuestros tratamientos de ortodoncia tradicional e invisible.</p>
+                    <a href="#" class="text-blue-500 font-medium flex items-center">
+                        Saber más <i class="fas fa-arrow-right ml-2"></i>
+                    </a>
+                </div>
+                
+                <!-- Service 3 -->
+                <div class="service-card bg-white p-8 rounded-xl shadow-md transition duration-300">
+                    <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-teeth text-blue-500 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">Implantes Dentales</h3>
+                    <p class="text-gray-600 mb-4">Soluciones permanentes para reemplazar dientes perdidos con la última tecnología en implantes.</p>
+                    <a href="#" class="text-blue-500 font-medium flex items-center">
+                        Saber más <i class="fas fa-arrow-right ml-2"></i>
+                    </a>
+                </div>
+                
+                <!-- Service 4 -->
+                <div class="service-card bg-white p-8 rounded-xl shadow-md transition duration-300">
+                    <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-tooth text-blue-500 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">Odontopediatría</h3>
+                    <p class="text-gray-600 mb-4">Cuidado dental especializado para los más pequeños en un ambiente amigable y sin estrés.</p>
+                    <a href="#" class="text-blue-500 font-medium flex items-center">
+                        Saber más <i class="fas fa-arrow-right ml-2"></i>
+                    </a>
+                </div>
+                
+                <!-- Service 5 -->
+                <div class="service-card bg-white p-8 rounded-xl shadow-md transition duration-300">
+                    <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-teeth-open text-blue-500 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">Endodoncia</h3>
+                    <p class="text-gray-600 mb-4">Tratamiento de conducto indoloro para salvar tus dientes y eliminar el dolor de raíz.</p>
+                    <a href="#" class="text-blue-500 font-medium flex items-center">
+                        Saber más <i class="fas fa-arrow-right ml-2"></i>
+                    </a>
+                </div>
+                
+                <!-- Service 6 -->
+                <div class="service-card bg-white p-8 rounded-xl shadow-md transition duration-300">
+                    <div class="w-16 h-16 bg-blue-100 rounded-full flex items-center justify-center mb-6">
+                        <i class="fas fa-teeth text-blue-500 text-2xl"></i>
+                    </div>
+                    <h3 class="text-xl font-bold text-gray-800 mb-3">Estética Dental</h3>
+                    <p class="text-gray-600 mb-4">Diseño de sonrisa personalizado con carillas, coronas y tratamientos estéticos avanzados.</p>
+                    <a href="#" class="text-blue-500 font-medium flex items-center">
+                        Saber más <i class="fas fa-arrow-right ml-2"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section id="nosotros" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row items-center">
+                <div class="md:w-1/2 mb-12 md:mb-0 md:pr-12">
+                    <img src="https://images.unsplash.com/photo-1550831107-1553da8c8464?ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D&auto=format&fit=crop&w=1374&q=80" 
+                         alt="Equipo de Risum" 
+                         class="rounded-2xl shadow-xl w-full">
+                </div>
+                <div class="md:w-1/2">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-6">Nuestra Filosofía</h2>
+                    <div class="w-20 h-1 bg-blue-500 mb-6"></div>
+                    <p class="text-gray-600 mb-6">En Risum creemos que cada sonrisa cuenta una historia única. Nuestro equipo de profesionales altamente capacitados está comprometido con brindar atención personalizada utilizando tecnología de vanguardia en un ambiente cálido y acogedor.</p>
+                    
+                    <div class="space-y-4 mb-8">
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0 mt-1">
+                                <div class="w-8 h-8 bg-blue-100 rounded-full flex items-center justify-center">
+                                    <i class="fas fa-check text-blue-500"></i>
+                                </div>
+                            </div>
+                            <div class="ml-3">
+                                <p class="text-gray-800 font-medium">Equipo multidisciplinario con más de 15 años de experiencia</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0 mt-1">
+                                <div class="w-8 h-8 bg-blue-100 rounded-full flex items-center justify-center">
+                                    <i class="fas fa-check text-blue-500"></i>
+                                </div>
+                            </div>
+                            <div class="ml-3">
+                                <p class="text-gray-800 font-medium">Tecnología digital de última generación</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0 mt-1">
+                                <div class="w-8 h-8 bg-blue-100 rounded-full flex items-center justify-center">
+                                    <i class="fas fa-check text-blue-500"></i>
+                                </div>
+                            </div>
+                            <div class="ml-3">
+                                <p class="text-gray-800 font-medium">Protocolos de bioseguridad certificados</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0 mt-1">
+                                <div class="w-8 h-8 bg-blue-100 rounded-full flex items-center justify-center">
+                                    <i class="fas fa-check text-blue-500"></i>
+                                </div>
+                            </div>
+                            <div class="ml-3">
+                                <p class="text-gray-800 font-medium">Financiamiento flexible y planes de pago</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <a href="#contacto" class="inline-block bg-blue-500 hover:bg-blue-600 text-white px-6 py-3 rounded-full font-medium transition duration-300">
+                        Conoce a nuestro equipo
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Testimonials Section -->
+    <section id="testimonios" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <div class="text-center mb-16">
+                <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-4">Lo que dicen nuestros pacientes</h2>
+                <div class="w-20 h-1 bg-blue-500 mx-auto mb-6"></div>
+                <p class="text-gray-600 max-w-2xl mx-auto">La satisfacción de nuestros pacientes es nuestra mayor recompensa. Estas son algunas de sus experiencias.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <!-- Testimonial 1 -->
+                <div class="testimonial-card bg-white p-8 rounded-xl shadow-md">
+                    <div class="flex items-center mb-6">
+                        <div class="w-12 h-12 rounded-full overflow-hidden">
+                            <img src="https://randomuser.me/api/portraits/women/43.jpg" alt="María González" class="w-full h-full object-cover">
+                        </div>
+                        <div class="ml-4">
+                            <h4 class="font-bold text-gray-800">María González</h4>
+                            <div class="flex mt-1">
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 italic">"Después de años de sentirme incómoda con mi sonrisa, el equipo de Risum me devolvió la confianza. El tratamiento de ortodoncia fue más rápido y cómodo de lo que imaginé. ¡Recomiendo 100%!"</p>
+                </div>
+                
+                <!-- Testimonial 2 -->
+                <div class="testimonial-card bg-white p-8 rounded-xl shadow-md">
+                    <div class="flex items-center mb-6">
+                        <div class="w-12 h-12 rounded-full overflow-hidden">
+                            <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Carlos Mendoza" class="w-full h-full object-cover">
+                        </div>
+                        <div class="ml-4">
+                            <h4 class="font-bold text-gray-800">Carlos Mendoza</h4>
+                            <div class="flex mt-1">
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 italic">"Tenía mucho miedo de ir al dentista por malas experiencias previas, pero en Risum me hicieron sentir cómodo desde el primer momento. El implante dental fue indoloro y el resultado es perfecto. ¡Gracias equipo!"</p>
+                </div>
+                
+                <!-- Testimonial 3 -->
+                <div class="testimonial-card bg-white p-8 rounded-xl shadow-md">
+                    <div class="flex items-center mb-6">
+                        <div class="w-12 h-12 rounded-full overflow-hidden">
+                            <img src="https://randomuser.me/api/portraits/women/65.jpg" alt="Ana Torres" class="w-full h-full object-cover">
+                        </div>
+                        <div class="ml-4">
+                            <h4 class="font-bold text-gray-800">Ana Torres</h4>
+                            <div class="flex mt-1">
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                                <i class="fas fa-star text-yellow-400"></i>
+                            </div>
+                        </div>
+                    </div>
+                    <p class="text-gray-600 italic">"Llevo a mis dos hijos a Risum desde que eran pequeños. La odontopediatra es maravillosa con los niños, hacen que la visita al dentista sea una experiencia positiva. Las instalaciones son impecables y el servicio excelente."</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Appointment Section -->
+    <section class="py-20 bg-blue-500 text-white">
+        <div class="container mx-auto px-6 text-center">
+            <h2 class="text-3xl md:text-4xl font-bold mb-6">¿Listo para transformar tu sonrisa?</h2>
+            <p class="text-xl mb-8 max-w-2xl mx-auto">Agenda una cita de valoración sin costo con uno de nuestros especialistas.</p>
+            <a href="#contacto" class="inline-block bg-white text-blue-600 hover:bg-gray-100 px-8 py-3 rounded-full font-semibold transition duration-300">
+                Reservar Cita Ahora
+            </a>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contacto" class="py-20 bg-white">
+        <div class="container mx-auto px-6">
+            <div class="flex flex-col md:flex-row">
+                <div class="md:w-1/2 mb-12 md:mb-0 md:pr-12">
+                    <h2 class="text-3xl md:text-4xl font-bold text-gray-800 mb-6">Contáctanos</h2>
+                    <div class="w-20 h-1 bg-blue-500 mb-6"></div>
+                    <p class="text-gray-600 mb-8">Estamos aquí para responder todas tus preguntas y ayudarte a programar tu próxima visita.</p>
+                    
+                    <div class="space-y-6">
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0 mt-1">
+                                <div class="w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center">
+                                    <i class="fas fa-map-marker-alt text-blue-500"></i>
+                                </div>
+                            </div>
+                            <div class="ml-4">
+                                <h4 class="font-bold text-gray-800">Dirección</h4>
+                                <p class="text-gray-600">Av. Principal 1234, Col. Reforma<br>Guadalajara, Jalisco</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0 mt-1">
+                                <div class="w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center">
+                                    <i class="fas fa-phone-alt text-blue-500"></i>
+                                </div>
+                            </div>
+                            <div class="ml-4">
+                                <h4 class="font-bold text-gray-800">Teléfono</h4>
+                                <p class="text-gray-600">+52 33 1234 5678<br>Lunes a Viernes: 9am - 7pm</p>
+                            </div>
+                        </div>
+                        
+                        <div class="flex items-start">
+                            <div class="flex-shrink-0 mt-1">
+                                <div class="w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center">
+                                    <i class="fas fa-envelope text-blue-500"></i>
+                                </div>
+                            </div>
+                            <div class="ml-4">
+                                <h4 class="font-bold text-gray-800">Correo Electrónico</h4>
+                                <p class="text-gray-600">hola@risum.com<br>contacto@risum.com</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="mt-8">
+                        <h4 class="font-bold text-gray-800 mb-4">Síguenos</h4>
+                        <div class="flex space-x-4">
+                            <a href="#" class="w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center text-blue-500 hover:bg-blue-500 hover:text-white transition duration-300">
+                                <i class="fab fa-facebook-f"></i>
+                            </a>
+                            <a href="#" class="w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center text-blue-500 hover:bg-blue-500 hover:text-white transition duration-300">
+                                <i class="fab fa-instagram"></i>
+                            </a>
+                            <a href="#" class="w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center text-blue-500 hover:bg-blue-500 hover:text-white transition duration-300">
+                                <i class="fab fa-twitter"></i>
+                            </a>
+                            <a href="#" class="w-10 h-10 bg-blue-100 rounded-full flex items-center justify-center text-blue-500 hover:bg-blue-500 hover:text-white transition duration-300">
+                                <i class="fab fa-linkedin-in"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="md:w-1/2">
+                    <div class="bg-gray-50 p-8 rounded-xl shadow-md">
+                        <h3 class="text-2xl font-bold text-gray-800 mb-6">Agenda tu cita</h3>
+                        <form id="appointment-form">
+                            <div class="grid grid-cols-1 md:grid-cols-2 gap-6 mb-6">
+                                <div>
+                                    <label for="name" class="block text-gray-700 font-medium mb-2">Nombre completo</label>
+                                    <input type="text" id="name" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent" required>
+                                </div>
+                                <div>
+                                    <label for="email" class="block text-gray-700 font-medium mb-2">Correo electrónico</label>
+                                    <input type="email" id="email" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent" required>
+                                </div>
+                                <div>
+                                    <label for="phone" class="block text-gray-700 font-medium mb-2">Teléfono</label>
+                                    <input type="tel" id="phone" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent" required>
+                                </div>
+                                <div>
+                                    <label for="service" class="block text-gray-700 font-medium mb-2">Servicio de interés</label>
+                                    <select id="service" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent" required>
+                                        <option value="" disabled selected>Selecciona un servicio</option>
+                                        <option value="blanqueamiento">Blanqueamiento Dental</option>
+                                        <option value="ortodoncia">Ortodoncia</option>
+                                        <option value="implantes">Implantes Dentales</option>
+                                        <option value="odontopediatria">Odontopediatría</option>
+                                        <option value="endodoncia">Endodoncia</option>
+                                        <option value="estetica">Estética Dental</option>
+                                        <option value="otros">Otros</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="mb-6">
+                                <label for="message" class="block text-gray-700 font-medium mb-2">Mensaje adicional</label>
+                                <textarea id="message" rows="4" class="w-full px-4 py-2 border border-gray-300 rounded-lg focus:outline-none focus:ring-2 focus:ring-blue-500 focus:border-transparent"></textarea>
+                            </div>
+                            <button type="submit" class="w-full bg-blue-500 hover:bg-blue-600 text-white px-6 py-3 rounded-lg font-medium transition duration-300">
+                                Enviar Solicitud
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Map Section -->
+    <div class="h-96 w-full bg-gray-200">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3732.869421380344!2d-103.3918689246826!3d20.67339898088272!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x8428ae3a3f5c0a39%3A0x9d71d125eef3f942!2sAv%20Ju%C3%A1rez%2C%20Zona%20Centro%2C%2044100%20Guadalajara%2C%20Jal.!5e0!3m2!1ses-419!2smx!4v1690835785200!5m2!1ses-419!2smx" 
+                width="100%" 
+                height="100%" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade"></iframe>
+    </div>
+
+    <!-- Footer -->
+    <footer class="bg-gray-900 text-white py-12">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <div class="flex items-center mb-4">
+                        <div class="w-10 h-10 bg-blue-500 rounded-full flex items-center justify-center text-white font-bold text-xl">R</div>
+                        <a href="#" class="ml-3 text-xl font-bold">Risum</a>
+                    </div>
+                    <p class="text-gray-400">Odontología de excelencia comprometida con tu salud bucal y tu sonrisa perfecta.</p>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Servicios</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Blanqueamiento Dental</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Ortodoncia</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Implantes Dentales</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Odontopediatría</a></li>
+                        <li><a href="#" class="text-gray-400 hover:text-white transition duration-300">Estética Dental</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Enlaces Rápidos</h4>
+                    <ul class="space-y-2">
+                        <li><a href="#inicio" class="text-gray-400 hover:text-white transition duration-300">Inicio</a></li>
+                        <li><a href="#servicios" class="text-gray-400 hover:text-white transition duration-300">Servicios</a></li>
+                        <li><a href="#nosotros" class="text-gray-400 hover:text-white transition duration-300">Nosotros</a></li>
+                        <li><a href="#testimonios" class="text-gray-400 hover:text-white transition duration-300">Testimonios</a></li>
+                        <li><a href="#contacto" class="text-gray-400 hover:text-white transition duration-300">Contacto</a></li>
+                    </ul>
+                </div>
+                
+                <div>
+                    <h4 class="text-lg font-bold mb-4">Horario</h4>
+                    <ul class="space-y-2 text-gray-400">
+                        <li class="flex items-center">
+                            <i class="far fa-clock mr-2"></i>
+                            <span>Lunes - Viernes: 9:00 - 19:00</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="far fa-clock mr-2"></i>
+                            <span>Sábado: 9:00 - 14:00</span>
+                        </li>
+                        <li class="flex items-center">
+                            <i class="far fa-clock mr-2"></i>
+                            <span>Domingo: Cerrado</span>
+                        </li>
+                    </ul>
+                    
+                    <div class="mt-4">
+                        <h4 class="text-lg font-bold mb-2">Newsletter</h4>
+                        <div class="flex">
+                            <input type="email" placeholder="Tu correo" class="px-4 py-2 bg-gray-800 text-white rounded-l-lg focus:outline-none focus:ring-2 focus:ring-blue-500 w-full">
+                            <button class="bg-blue-500 hover:bg-blue-600 px-4 py-2 rounded-r-lg">
+                                <i class="fas fa-paper-plane"></i>
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-800 mt-12 pt-8 flex flex-col md:flex-row justify-between items-center">
+                <p class="text-gray-400 mb-4 md:mb-0">© 2023 Risum Odontología. Todos los derechos reservados.</p>
+                <div class="flex space-x-6">
+                    <a href="#" class="text-gray-400 hover:text-white transition duration-300">Términos y Condiciones</a>
+                    <a href="#" class="text-gray-400 hover:text-white transition duration-300">Política de Privacidad</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <button id="back-to-top" class="fixed bottom-8 right-8 w-12 h-12 bg-blue-500 text-white rounded-full shadow-lg flex items-center justify-center opacity-0 invisible transition-all duration-300">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Appointment Success Modal -->
+    <div id="success-modal" class="fixed inset-0 bg-black bg-opacity-50 flex items-center justify-center z-50 opacity-0 invisible transition-opacity duration-300">
+        <div class="bg-white rounded-xl p-8 max-w-md mx-4 transform transition-all duration-300 scale-95">
+            <div class="text-center">
+                <div class="w-16 h-16 bg-green-100 rounded-full flex items-center justify-center mx-auto mb-4">
+                    <i class="fas fa-check text-green-500 text-2xl"></i>
+                </div>
+                <h3 class="text-2xl font-bold text-gray-800 mb-2">¡Cita agendada!</h3>
+                <p class="text-gray-600 mb-6">Hemos recibido tu solicitud. Nos pondremos en contacto contigo en las próximas horas para confirmar tu cita.</p>
+                <button id="close-modal" class="bg-blue-500 hover:bg-blue-600 text-white px-6 py-2 rounded-full font-medium transition duration-300">
+                    Cerrar
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Mobile menu toggle
+        const mobileMenuButton = document.getElementById('mobile-menu-button');
+        const mobileMenu = document.getElementById('mobile-menu');
+        
+        mobileMenuButton.addEventListener('click', () => {
+            mobileMenu.classList.toggle('hidden');
+        });
+        
+        // Back to top button
+        const backToTopButton = document.getElementById('back-to-top');
+        
+        window.addEventListener('scroll', () => {
+            if (window.pageYOffset > 300) {
+                backToTopButton.classList.remove('opacity-0', 'invisible');
+                backToTopButton.classList.add('opacity-100', 'visible');
+            } else {
+                backToTopButton.classList.remove('opacity-100', 'visible');
+                backToTopButton.classList.add('opacity-0', 'invisible');
+            }
+        });
+        
+        backToTopButton.addEventListener('click', () => {
+            window.scrollTo({ top: 0, behavior: 'smooth' });
+        });
+        
+        // Form submission
+        const appointmentForm = document.getElementById('appointment-form');
+        const successModal = document.getElementById('success-modal');
+        const closeModal = document.getElementById('close-modal');
+        
+        appointmentForm.addEventListener('submit', (e) => {
+            e.preventDefault();
+            
+            // Here you would typically send the form data to your server
+            // For this example, we'll just show the success modal
+            
+            // Reset form
+            appointmentForm.reset();
+            
+            // Show success modal
+            successModal.classList.remove('opacity-0', 'invisible');
+            successModal.classList.add('opacity-100', 'visible');
+            document.querySelector('#success-modal div').classList.remove('scale-95');
+            document.querySelector('#success-modal div').classList.add('scale-100');
+        });
+        
+        closeModal.addEventListener('click', () => {
+            successModal.classList.remove('opacity-100', 'visible');
+            successModal.classList.add('opacity-0', 'invisible');
+            document.querySelector('#success-modal div').classList.remove('scale-100');
+            document.querySelector('#success-modal div').classList.add('scale-95');
+        });
+        
+        // Smooth scrolling for anchor links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+                
+                const targetId = this.getAttribute('href');
+                if (targetId === '#') return;
+                
+                const targetElement = document.querySelector(targetId);
+                if (targetElement) {
+                    window.scrollTo({
+                        top: targetElement.offsetTop - 80,
+                        behavior: 'smooth'
+                    });
+                    
+                    // Close mobile menu if open
+                    mobileMenu.classList.add('hidden');
+                }
+            });
+        });
+    </script>
+</body>
+</html>

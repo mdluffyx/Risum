@@ -8,7 +8,7 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
     <link rel="stylesheet" href="css/styles.css">
 </head>
-<body class="bg-gray-50">
+<body class="bg-gray-50 flex flex-col min-h-screen">
     <!-- Header/Navbar -->
     <header class="fixed w-full bg-white shadow-md z-50">
         <div class="container mx-auto px-6 py-3">
@@ -72,6 +72,36 @@
         </div>
     </section>
 
+    <!-- Why Choose Us Section -->
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-6">
+            <h2 class="text-3xl font-bold text-center mb-12">¿Por qué elegir Risum?</h2>
+            <div class="grid md:grid-cols-3 gap-8">
+                <div class="bg-white p-8 rounded-xl shadow-md hover:shadow-lg transition duration-300">
+                    <div class="text-blue-500 text-4xl mb-4">
+                        <i class="fas fa-user-md"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Expertos Certificados</h3>
+                    <p class="text-gray-600">Nuestro equipo de odontólogos cuenta con especializaciones y certificaciones internacionales.</p>
+                </div>
+                <div class="bg-white p-8 rounded-xl shadow-md hover:shadow-lg transition duration-300">
+                    <div class="text-blue-500 text-4xl mb-4">
+                        <i class="fas fa-teeth"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Tecnología de Vanguardia</h3>
+                    <p class="text-gray-600">Utilizamos los equipos más avanzados para diagnósticos precisos y tratamientos efectivos.</p>
+                </div>
+                <div class="bg-white p-8 rounded-xl shadow-md hover:shadow-lg transition duration-300">
+                    <div class="text-blue-500 text-4xl mb-4">
+                        <i class="fas fa-heart"></i>
+                    </div>
+                    <h3 class="text-xl font-bold mb-3">Enfoque Personalizado</h3>
+                    <p class="text-gray-600">Cada tratamiento es diseñado específicamente para las necesidades de cada paciente.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <!-- Stats Section -->
     <section class="bg-white py-12 shadow-sm">
         <div class="container mx-auto px-6">
@@ -95,6 +125,48 @@
             </div>
         </div>
     </section>
+
+    <!-- Footer -->
+    <footer class="bg-gray-800 text-white py-12 mt-auto">
+        <div class="container mx-auto px-6">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-8">
+                <div>
+                    <img src="logo.png" alt="Risum Logo" class="h-12 mb-4">
+                    <p class="text-gray-400">Transformando sonrisas con excelencia y calidez humana desde 2010.</p>
+                </div>
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Enlaces Rápidos</h3>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="text-gray-400 hover:text-white">Inicio</a></li>
+                        <li><a href="servicios.html" class="text-gray-400 hover:text-white">Servicios</a></li>
+                        <li><a href="nosotros.html" class="text-gray-400 hover:text-white">Nosotros</a></li>
+                        <li><a href="testimonios.html" class="text-gray-400 hover:text-white">Testimonios</a></li>
+                        <li><a href="contacto.html" class="text-gray-400 hover:text-white">Contacto</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Horario</h3>
+                    <ul class="text-gray-400 space-y-2">
+                        <li>Lunes - Viernes: 9am - 7pm</li>
+                        <li>Sábado: 9am - 2pm</li>
+                        <li>Domingo: Cerrado</li>
+                    </ul>
+                </div>
+                <div>
+                    <h3 class="text-lg font-bold mb-4">Síguenos</h3>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-facebook-f text-xl"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-instagram text-xl"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-twitter text-xl"></i></a>
+                        <a href="#" class="text-gray-400 hover:text-white"><i class="fab fa-linkedin-in text-xl"></i></a>
+                    </div>
+                </div>
+            </div>
+            <div class="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
+                <p>&copy; 2023 Risum Odontología. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
 
     <script src="js/scripts.js"></script>
 </body>

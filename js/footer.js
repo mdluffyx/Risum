@@ -11,13 +11,21 @@ function generateFooter() {
     
     // Copyright section
     const copyrightDiv = document.createElement('div');
-    copyrightDiv.className = 'mb-4 md:mb-0';
+    copyrightDiv.className = 'mb-4 md:mb-0 flex items-center space-x-4';
+    
+    // Add logo
+    const logo = document.createElement('img');
+    logo.src = '../logo_name.png'; // Try using the other logo file
+    logo.alt = 'Risum Logo';
+    logo.className = 'h-8 w-auto'; // Keep existing size classes
     
     const copyrightText = document.createElement('p');
     const yearSpan = document.createElement('span');
     yearSpan.id = 'copyright-year';
     yearSpan.textContent = new Date().getFullYear();
     copyrightText.innerHTML = `&copy; ${yearSpan.outerHTML} Risum. All rights reserved.`;
+    
+    copyrightDiv.appendChild(logo);
     copyrightDiv.appendChild(copyrightText);
     
     // Social media section

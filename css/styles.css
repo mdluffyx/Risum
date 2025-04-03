@@ -112,3 +112,8 @@ section {
     color: #1f2937;
     font-weight: 500;
 }
+
+/* Footer logo visibility fix */
+.footer-logo {
+    filter: invert(1);
+}
